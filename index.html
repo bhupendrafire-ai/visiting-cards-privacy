@@ -52,8 +52,16 @@
 
     <h2>Storage, retention, and deletion</h2>
     <p>Your catalogue and ordinary card media remain on your device until you delete records, clear the app’s storage, or uninstall the app. You can delete cards, contacts, and companies inside the app. Copies that you export, back up, or send to another person remain with their destination and must be deleted there separately.</p>
-    <p>Each exchanged background is stored under an unguessable address. A separate deletion secret stays in secure storage on the uploading phone and is never placed in the QR. Editing your My Card tells the service to delete the previous background. If the app was removed before that could happen, you may request deletion by emailing the public background link to the contact address below. A receiving phone may retain its downloaded copy until its owner deletes that card or app data.</p>
+    <p>Each exchanged background is stored under an unguessable address. A separate deletion secret stays in secure storage on the uploading phone and is never placed in the QR. The one-way installation hash and rate counter are automatically deleted within 48 hours. A receiving phone may retain its downloaded copy until its owner deletes that card or app data.</p>
     <p>An optional API key is stored using Android Keystore-backed secure storage. Network requests to optional providers and websites use encrypted HTTPS connections.</p>
+
+    <h2 id="delete-data">Request data deletion</h2>
+    <p>Visiting Cards has no user account. To delete data handled by the developer-operated exchange service:</p>
+    <ol>
+      <li>Edit or delete My Card in the app. The app uses its device-held deletion secret to remove the previous hosted background and its server metadata.</li>
+      <li>If the app or deletion secret is no longer available, email <a href="mailto:bhupendrafire@gmail.com?subject=Visiting%20Cards%20data%20deletion">bhupendrafire@gmail.com</a> with the public background URL from the saved or shared QR/card and ask for deletion.</li>
+    </ol>
+    <p>Manual requests are completed within 30 days. The hosted background and its server metadata are deleted. Rate-limit records expire automatically within 48 hours. Copies already downloaded by another user cannot be remotely removed; that user can delete the received card or clear the app's data. Local catalogue data can be deleted inside the app or by clearing Visiting Cards storage in Android settings.</p>
 
     <h2>Sharing and sale</h2>
     <p>The developer does not sell, rent, analyse, or use your catalogue or exchanged backgrounds for advertising. The app contains no advertising or analytics SDK. Data is disclosed to an optional service only as described above or when you intentionally export or share it.</p>
