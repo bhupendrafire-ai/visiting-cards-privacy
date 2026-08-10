@@ -23,10 +23,10 @@
   <main>
     <header>
       <h1>Visiting Cards Privacy Policy</h1>
-      <div class="meta">Effective 10 August 2026 Â· Developer: Bhupendra Warade</div>
+      <div class="meta">Effective 10 August 2026 · Developer: Bhupendra Warade</div>
     </header>
 
-    <p>Visiting Cards is designed to keep your business-card catalogue under your control. The app has no Visiting Cards account, no advertising, no analytics, and no developer-operated server. Core card recognition and catalogue functions run on your device.</p>
+    <p>Visiting Cards is designed to keep your business-card catalogue under your control. The app has no Visiting Cards account, advertising, analytics, or subscription. Core card recognition and catalogue functions run on your device. A small developer-operated image service is used only when you choose to exchange your own card's selected background.</p>
 
     <h2>Information handled by the app</h2>
     <p>Depending on the features you use, the app may access and store on your device:</p>
@@ -35,7 +35,8 @@
       <li>text recognised from cards, including names, job titles, companies, phone numbers, email addresses, websites, postal addresses, GSTIN/PAN details, and other printed information;</li>
       <li>scan location, place name, date, and event information;</li>
       <li>voice-note audio and text you attach to a card;</li>
-      <li>follow-up reminders, tags, interaction notes, and app settings; and</li>
+      <li>follow-up reminders, tags, interaction notes, and app settings;</li>
+      <li>the contact details, layout, and visual background you choose for “My Card”; and</li>
       <li>an optional API key that you provide for an AI service.</li>
     </ul>
 
@@ -43,26 +44,28 @@
     <p>The app uses this information to read cards, let you review and correct them, organise your catalogue, search it, group cards by company, place, event, or type, set reminders, and create exports or backups that you request.</p>
 
     <h2>Optional services that can receive data</h2>
-    <p>Core card reading works without an AI service. If you enable AI-assisted reading and save your own provider key, relevant card text is sent directly from your device to the provider you select: OpenRouter, Anthropic, OpenAI, or Google Gemini. A card photograph is included only if you separately enable â€œAlso send the card photo.â€ Your selected provider processes that request under its own terms and privacy policy.</p>
+    <p>Core card reading works without an AI service. If you enable AI-assisted reading and save your own provider key, relevant card text is sent directly from your device to the provider you select: OpenRouter, Anthropic, OpenAI, or Google Gemini. A card photograph is included only if you separately enable “Also send the card photo.” Your selected provider processes that request under its own terms and privacy policy.</p>
     <p>If you enable company lookup, the app may open the public website printed on a card to identify what that company does. It does not send your catalogue to that website.</p>
-    <p>If you ask the app to record where a card was scanned, the app obtains a device location and may use the operating systemâ€™s geocoding service to turn coordinates into a place name. That service may process the coordinates under the platform providerâ€™s privacy terms.</p>
+    <p>If you ask the app to record where a card was scanned, the app obtains a device location and may use the operating system’s geocoding service to turn coordinates into a place name. That service may process the coordinates under the platform provider’s privacy terms.</p>
+    <p>If you enable My Card exchange, your contact fields and layout recipe are placed in the QR shown or shared by you. The app uploads the selected visual background over HTTPS to the Visiting Cards exchange service backed by Vercel Blob so the receiving phone can download and cache it. For a card created in the app, that blob contains no structured contact fields. If you choose an existing card image, the image itself may visibly contain the text printed on that card. The service stores no account, original filename, contact database, or QR payload. A one-way hash of the app installation identifier is used only to enforce the upload rate limit.</p>
     <p>Exports, backups, and contact saving occur only when you request them. The selected destination app or service then handles the information under its own privacy terms.</p>
 
     <h2>Storage, retention, and deletion</h2>
-    <p>Your catalogue and media remain on your device until you delete records, clear the appâ€™s storage, or uninstall the app. You can delete cards, contacts, and companies inside the app. Copies that you export or back up remain wherever you chose to save or share them and must be deleted there separately.</p>
+    <p>Your catalogue and ordinary card media remain on your device until you delete records, clear the app’s storage, or uninstall the app. You can delete cards, contacts, and companies inside the app. Copies that you export, back up, or send to another person remain with their destination and must be deleted there separately.</p>
+    <p>Each exchanged background is stored under an unguessable address. A separate deletion secret stays in secure storage on the uploading phone and is never placed in the QR. Editing your My Card tells the service to delete the previous background. If the app was removed before that could happen, you may request deletion by emailing the public background link to the contact address below. A receiving phone may retain its downloaded copy until its owner deletes that card or app data.</p>
     <p>An optional API key is stored using Android Keystore-backed secure storage. Network requests to optional providers and websites use encrypted HTTPS connections.</p>
 
     <h2>Sharing and sale</h2>
-    <p>The developer does not receive, sell, rent, or use your catalogue for advertising. The app contains no advertising or analytics SDK. Data is disclosed to an optional service only as described above or when you intentionally export or share it.</p>
+    <p>The developer does not sell, rent, analyse, or use your catalogue or exchanged backgrounds for advertising. The app contains no advertising or analytics SDK. Data is disclosed to an optional service only as described above or when you intentionally export or share it.</p>
 
     <h2>Permissions</h2>
-    <p>The app may request camera, microphone, location, contacts, and notification permissions to provide the corresponding feature. You can deny or revoke these permissions in Android settings. The app uses Androidâ€™s system photo picker for gallery selection.</p>
+    <p>The app may request camera, microphone, location, contacts, and notification permissions to provide the corresponding feature. You can deny or revoke these permissions in Android settings. The app uses Android’s system photo picker for gallery selection.</p>
 
     <h2>Children</h2>
     <p>Visiting Cards is a business productivity tool intended for adults and is not directed to children under 13.</p>
 
     <h2>Changes</h2>
-    <p>This policy may be updated when the appâ€™s data practices change. The effective date above will be revised when that happens.</p>
+    <p>This policy may be updated when the app’s data practices change. The effective date above will be revised when that happens.</p>
 
     <footer>
       Questions about this policy can be sent to <a href="mailto:bhupendrafire@gmail.com">bhupendrafire@gmail.com</a>.
@@ -70,4 +73,3 @@
   </main>
 </body>
 </html>
-
